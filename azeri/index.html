@@ -1,0 +1,1249 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="az" lang="az">
+<head>
+<meta http-equiv="content-language" content="az" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<style>/*
+    This CSS gets added inline
+    into the index.html file
+*/
+body {
+  background: #fff; }
+
+.main {
+  max-width: 976px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 20px;
+  zoom: 1; }
+
+.masthead {
+  background: url(css/f/bbc.png) no-repeat #990000;
+  color: #fff;
+  display: block;
+  font-size: 11px;
+  height: 17px;
+  line-height: 17px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  text-transform: uppercase; }
+
+.onbbcdomain .masthead {
+  display: none; }
+
+.tracking-image {
+  height: 1px;
+  position: absolute;
+  width: 1px; }
+
+.no-js-message {
+  background: red;
+  color: white;
+  display: block;
+  margin-top: -10px;
+  padding: 1em;
+  text-align: center; }
+
+.footer {
+  background: url(css/f/bbc.png) no-repeat 13px 1px #990000;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  font-size: 12px;
+  height: 1em;
+  padding: 0.25em;
+  position: absolute;
+  right: 0; }
+
+.footer::after {
+  content: "©"; }
+
+.onbbcdomain .footer {
+  display: none; }
+
+.tracking-image {
+  height: 1px;
+  position: absolute;
+  width: 1px; }
+
+.no-js-message {
+  background: red;
+  color: white;
+  display: block;
+  margin-top: -10px;
+  padding: 1em;
+  text-align: center; }
+
+.footer {
+  background: url(css/f/bbc.png) no-repeat 13px 1px #990000;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  font-size: 12px;
+  height: 1em;
+  padding: 0.25em;
+  position: fixed;
+  right: 0; }
+
+.footer::after {
+  content: "\00a9"; }
+
+.onbbcdomain .footer {
+  display: none; }
+
+.bbc--afrique {
+  background-image: url(css/f/bbc-afrique.png); }
+
+.bbc--arabic {
+  background-image: url(css/f/bbc-arabic.png); }
+
+.bbc--azeri {
+  background-image: url(css/f/bbc-azeri.png); }
+
+.bbc--bengali {
+  background-image: url(css/f/bbc-bengali.png); }
+
+.bbc--burmese {
+  background-image: url(css/f/bbc-burmese.png); }
+
+.bbc--chinese {
+  background-image: url(css/f/bbc-chinese.png); }
+
+.bbc--english {
+  background-image: url(css/f/bbc.png); }
+
+.bbc--gahuza {
+  background-image: url(css/f/bbc-gahuza.png); }
+
+.bbc--hausa {
+  background-image: url(css/f/bbc-hausa.png); }
+
+.bbc--hindi {
+  background-image: url(css/f/bbc-hindi.png); }
+
+.bbc--indonesia {
+  background-image: url(css/f/bbc-indonesia.png); }
+
+.bbc--kyrgyz {
+  background-image: url(css/f/bbc-kyrgyz.png); }
+
+.bbc--mundo {
+  background-image: url(css/f/bbc-mundo.png); }
+
+.bbc--nepali {
+  background-image: url(css/f/bbc-nepali.png); }
+
+.bbc--pashto {
+  background-image: url(css/f/bbc-pashto.png); }
+
+.bbc--persian {
+  background-image: url(css/f/bbc-persian.png); }
+
+.bbc--portuguese {
+  background-image: url(css/f/bbc-portuguese.png); }
+
+.bbc--rusian {
+  background-image: url(css/f/bbc-rusian.png); }
+
+.bbc--sinhala {
+  background-image: url(css/f/bbc-sinhala.png); }
+
+.bbc--somali {
+  background-image: url(css/f/bbc-somali.png); }
+
+.bbc--swahili {
+  background-image: url(css/f/bbc-swahili.png); }
+
+.bbc--tamil {
+  background-image: url(css/f/bbc-tamil.png); }
+
+.bbc--tajik {
+  background-image: url(css/f/bbc-tajik.png); }
+
+.bbc--turkce {
+  background-image: url(css/f/bbc-turkce.png); }
+
+.bbc--urdu {
+  background-image: url(css/f/bbc-urdu.png); }
+
+.bbc--ukchina {
+  background-image: url(css/f/bbc-ukchina.png); }
+
+.bbc--ukrainian {
+  background-image: url(css/f/bbc-ukrainian.png); }
+
+.bbc--uzbek {
+  background-image: url(css/f/bbc-uzbek.png); }
+
+.bbc--vietnamese {
+  background-image: url(css/f/bbc-vietnamese.png); }
+
+html[lang="ar"] body,
+html[lang="fa"] body,
+html[lang="ps"] body,
+html[lang="ur"] body {
+  direction: rtl; }
+</style>
+<script>
+document.documentElement.className = "js";
+window.istats = {
+  enabled: true
+}
+window.bbcFlagpoles_istats = "ON";
+window.istatsTrackingUrl = '//sa.bbc.co.uk/bbc/bbc/s?name=news.scotland.story.24631342.page.interactive&cps_asset_id=6925&page_type=story';
+(function () {
+    if (window.location.href.split('onbbcdomain=')[1] == 'true') {
+        document.documentElement.className = 'onbbcdomain';
+    }
+    var hostId = window.location.href.match(/hostid=(.*)&/);
+    if (hostId && hostId.length) {
+        window.istatsTrackingUrl += "&iframe_host=" + encodeURI(hostId[1]);
+        console.log(window.istatsTrackingUrl);
+    }
+})();
+document.write('<' + 'p style="position: absolute; top: -999em;"><' + 'img src="' + window.istatsTrackingUrl + '" height="1" width="1" alt="" /><' + '/p>');
+</script>
+<noscript>
+<p style="position: absolute; top: -999em;"><img src="//sa.bbc.co.uk/bbc/bbc/s?name=news.scotland.story.24631342.page.interactive&amp;cps_asset_id=6925&amp;page_type=story" height="1" width="1" alt="" /></p>
+</noscript>
+<!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/azeri/css/legacy-ie.css?v=0.1.3" />
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link type="text/css" rel="stylesheet" href="http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/azeri/css/main.css?v=0.1.3" />
+<!--<![endif]-->
+</head>
+<body>
+    <div class="masthead bbc--azeri"></div>
+
+    <div class="main">
+
+
+		<ul class="ns__rights-timeline">
+
+
+		<li class="ns__rights--head-section">
+			<div class="ns__rights--date"><h3>Tarix</h3></div>
+			<div class="ns__rights--decrim"><h3>Dekriminallaşdırıb</h3></div>
+			<div class="ns__rights--crim"><h3>Kriminallaşdırılıb<h3></h3></div>
+		</li>
+
+
+
+
+
+
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1789</h3></div>
+		<div class="ns__rights--crim">126 ölkə</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1791</h3></div>
+		<div class="ns__rights--decrim">
+Fransa</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1793</h3></div>
+		<div class="ns__rights--decrim">
+Monako</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1795</h3></div>
+		<div class="ns__rights--decrim">
+Belçika</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Lüksemburq</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1811</h3></div>
+		<div class="ns__rights--decrim">
+Hollandiya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1819</h3></div>
+		<div class="ns__rights--crim">
+Sinqapur</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1822</h3></div>
+		<div class="ns__rights--decrim">
+Dominikan Respublikası</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1831</h3></div>
+		<div class="ns__rights--decrim">
+Braziliya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1832</h3></div>
+		<div class="ns__rights--crim">
+Rusiya İmperiyası</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1837</h3></div>
+		<div class="ns__rights--decrim">
+Peru</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1841</h3></div>
+		<div class="ns__rights--crim">
+Honq Konq</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1858</h3></div>
+		<div class="ns__rights--decrim">
+Türkiyə</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1860</h3></div>
+		<div class="ns__rights--crim">
+Hindistan</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Banqladeş</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Butan</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Pakistan</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Myanma</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Şri Lanka</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1860s</h3></div>
+		<div class="ns__rights--crim">
+Qana</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Seyşel Adaları</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1861</h3></div>
+		<div class="ns__rights--crim">
+Syerra Leone</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1864</h3></div>
+		<div class="ns__rights--crim">
+Yamayka</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1865</h3></div>
+		<div class="ns__rights--crim">
+San Marino</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1867</h3></div>
+		<div class="ns__rights--crim">
+Zənzibar</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1869</h3></div>
+		<div class="ns__rights--decrim">
+Surinam</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1872</h3></div>
+		<div class="ns__rights--decrim">
+Meksiko</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1871</h3></div>
+		<div class="ns__rights--crim">
+Almaniya İmperiyası</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1874</h3></div>
+		<div class="ns__rights--crim">
+Fici</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1880s</h3></div>
+		<div class="ns__rights--crim">
+Kiribati</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Maldiv</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Marşal Adaları</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Solomon Adaları</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Tonqa</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Tuvalu</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Solomon Adaları</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Qərbi Samoa</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Lesoto</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Svazilend</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1880</h3></div>
+		<div class="ns__rights--decrim">
+Paraqvay</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1884</h3></div>
+		<div class="ns__rights--crim">
+Toqo</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1885</h3></div>
+		<div class="ns__rights--crim">
+Botsvana</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1886</h3></div>
+		<div class="ns__rights--crim">
+Portuqaliya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1887</h3></div>
+		<div class="ns__rights--decrim">
+Argentina</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1888</h3></div>
+		<div class="ns__rights--crim">
+Beliz</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Papua Yeni Qvinea</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Somali</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Qambia</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1890</h3></div>
+		<div class="ns__rights--decrim">
+İtaliya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1891</h3></div>
+		<div class="ns__rights--crim">
+Malavi</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Zimbabve</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1894</h3></div>
+		<div class="ns__rights--crim">
+Uqanda</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1896</h3></div>
+		<div class="ns__rights--decrim">
+Tayvan</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1897</h3></div>
+		<div class="ns__rights--crim">
+Keniya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1899</h3></div>
+		<div class="ns__rights--decrim">
+Honduras</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim ns__rights--up">
+Burundi</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Sudan</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Nauru</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1901</h3></div>
+		<div class="ns__rights--crim">
+Nigeriya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1902</h3></div>
+		<div class="ns__rights--crim">
+Uqanda</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1906</h3></div>
+		<div class="ns__rights--crim">
+Bruney</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Vanuatu</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1911</h3></div>
+		<div class="ns__rights--crim">
+Zambiya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1917</h3></div>
+		<div class="ns__rights--decrim">
+SSRİ</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1920</h3></div>
+		<div class="ns__rights--crim">
+Namibiya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Tanzaniya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1932</h3></div>
+		<div class="ns__rights--decrim">
+Polşa</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1933</h3></div>
+		<div class="ns__rights--decrim">
+Danimarka</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1934</h3></div>
+		<div class="ns__rights--decrim">
+Uruqvay</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim ns__rights--up">
+SSRİ</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1936</h3></div>
+		<div class="ns__rights--crim">
+İsrail</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1940</h3></div>
+		<div class="ns__rights--decrim">
+İslandiya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1942</h3></div>
+		<div class="ns__rights--decrim">
+İsveçrə</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1944</h3></div>
+		<div class="ns__rights--decrim">
+İsveç</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1951</h3></div>
+		<div class="ns__rights--decrim">
+Yunanıstan</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+İordaniya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Qərb Sahili</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1957</h3></div>
+		<div class="ns__rights--decrim">
+Tayland</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1961</h3></div>
+		<div class="ns__rights--decrim">
+Monqolustan</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1962</h3></div>
+		<div class="ns__rights--decrim">
+Çexoslovakiya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Macarıstan</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1966</h3></div>
+		<div class="ns__rights--crim">
+Əlcazair</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1968</h3></div>
+		<div class="ns__rights--decrim">
+Şərqi Almaniya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Bolqarıstan</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1969</h3></div>
+		<div class="ns__rights--decrim">
+Kanada</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Qərbi Almaniya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1971</h3></div>
+		<div class="ns__rights--decrim">
+Finlandiya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Avstriya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Kosta Rika</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1972</h3></div>
+		<div class="ns__rights--crim">
+Kamerun</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim ns__rights--up">
+Norveç</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1973</h3></div>
+		<div class="ns__rights--decrim">
+Malta</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1975</h3></div>
+		<div class="ns__rights--decrim">
+Timor-Leste</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1976</h3></div>
+		<div class="ns__rights--decrim">
+Bəhreyn</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1977</h3></div>
+		<div class="ns__rights--decrim">
+Xorvatia</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Monteneqro</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Sloveniya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1979</h3></div>
+		<div class="ns__rights--decrim">
+Kuba</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+İspaniya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1981</h3></div>
+		<div class="ns__rights--decrim">
+Kolumbiya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1982</h3></div>
+		<div class="ns__rights--decrim">
+Britaniya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1983</h3></div>
+		<div class="ns__rights--decrim">
+Portuqaliya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1986</h3></div>
+		<div class="ns__rights--decrim">
+Yeni Zelandiya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Haiti</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1988</h3></div>
+		<div class="ns__rights--decrim">
+İsrail</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1989</h3></div>
+		<div class="ns__rights--decrim">
+Lixtenşteyn</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1990</h3></div>
+		<div class="ns__rights--decrim">
+Andorra</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1991</h3></div>
+		<div class="ns__rights--decrim">
+Baham Adaları</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Ukrayna</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1992</h3></div>
+		<div class="ns__rights--crim">
+Nikaraqua</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim ns__rights--up">
+Latviya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Estoniya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1993</h3></div>
+		<div class="ns__rights--decrim">
+Avstraliya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Rusiya*</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+İrlandiya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Litva</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Qvineya Bisau</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1994</h3></div>
+		<div class="ns__rights--decrim">
+Belarus</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Serbiya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1995</h3></div>
+		<div class="ns__rights--decrim">
+Cibouti</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Moldova</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Albaniya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1996</h3></div>
+		<div class="ns__rights--decrim">
+Makedoniya</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Rumıniya</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1997</h3></div>
+		<div class="ns__rights--decrim">
+Çin</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Ekvador</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1998</h3></div>
+		<div class="ns__rights--decrim">
+Kipr</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1999</h3></div>
+		<div class="ns__rights--decrim">
+Çili</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1998</h3></div>
+		<div class="ns__rights--decrim">
+Qazaxıstan</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Qırğısızstan</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Cənubi Afrika</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Tacikistan</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2000</h3></div>
+		<div class="ns__rights--decrim">
+Azərbaycan</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Gürcüstan</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2001</h3></div>
+		<div class="ns__rights--decrim">
+Bosniya və Herseqovina</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2003</h3></div>
+		<div class="ns__rights--decrim">
+ABŞ</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Ermənistan</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2004</h3></div>
+		<div class="ns__rights--decrim">
+Kape Verde</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2005</h3></div>
+		<div class="ns__rights--decrim">
+Marşal Adaları</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2007</h3></div>
+		<div class="ns__rights--decrim">
+Vanuatu</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2008</h3></div>
+		<div class="ns__rights--decrim">
+Nepal</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Nikaraqua</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Panama</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2009</h3></div>
+		<div class="ns__rights--decrim">
+Hindistan</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim ns__rights--up">
+Burundi</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2010</h3></div>
+		<div class="ns__rights--decrim">
+Fici</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2013</h3></div>
+		<div class="ns__rights--crim">
+Hindistan</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+		</ul>
+
+
+    </div>
+
+    <div class="footer"></div>
+    <script>
+        var browser = null;
+        if ('querySelector' in document && 'localStorage' in window && 'addEventListener' in window ) {
+            browser = 'html5';
+        }
+        else if (/MSIE (7|8)/.test(navigator.userAgent)) {
+            browser = 'legacyie';
+            document.write('<scr' + 'ipt src="http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/azeri/js/lib/vendors/legacy-ie-polyfills.js"></scr' + 'ipt>');
+        }
+        if (browser) {
+            var done = false,
+                script = document.createElement('script');
+            script.src = "http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/azeri/js/lib/vendors/require/require-2.1.0.js";
+            script.type = "text/javascript";
+            script.onload = script.onreadystatechange = function() {
+                if ( !done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") ) {
+                    done = true;
+                    require.config({
+                        urlArgs: "v=0.1.3"
+                    });
+                    require(['http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/azeri/js/all-'+browser+'.js'], function () {
+                        require(['app'], function (app) {
+                            app.init('');
+                        });
+                    });
+                }
+            }
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>

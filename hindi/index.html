@@ -1,0 +1,1249 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hi" lang="hi">
+<head>
+<meta http-equiv="content-language" content="hi" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<style>/*
+    This CSS gets added inline
+    into the index.html file
+*/
+body {
+  background: #fff; }
+
+.main {
+  max-width: 976px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 20px;
+  zoom: 1; }
+
+.masthead {
+  background: url(css/f/bbc.png) no-repeat #990000;
+  color: #fff;
+  display: block;
+  font-size: 11px;
+  height: 17px;
+  line-height: 17px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  text-transform: uppercase; }
+
+.onbbcdomain .masthead {
+  display: none; }
+
+.tracking-image {
+  height: 1px;
+  position: absolute;
+  width: 1px; }
+
+.no-js-message {
+  background: red;
+  color: white;
+  display: block;
+  margin-top: -10px;
+  padding: 1em;
+  text-align: center; }
+
+.footer {
+  background: url(css/f/bbc.png) no-repeat 13px 1px #990000;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  font-size: 12px;
+  height: 1em;
+  padding: 0.25em;
+  position: absolute;
+  right: 0; }
+
+.footer::after {
+  content: "©"; }
+
+.onbbcdomain .footer {
+  display: none; }
+
+.tracking-image {
+  height: 1px;
+  position: absolute;
+  width: 1px; }
+
+.no-js-message {
+  background: red;
+  color: white;
+  display: block;
+  margin-top: -10px;
+  padding: 1em;
+  text-align: center; }
+
+.footer {
+  background: url(css/f/bbc.png) no-repeat 13px 1px #990000;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  font-size: 12px;
+  height: 1em;
+  padding: 0.25em;
+  position: fixed;
+  right: 0; }
+
+.footer::after {
+  content: "\00a9"; }
+
+.onbbcdomain .footer {
+  display: none; }
+
+.bbc--afrique {
+  background-image: url(css/f/bbc-afrique.png); }
+
+.bbc--arabic {
+  background-image: url(css/f/bbc-arabic.png); }
+
+.bbc--azeri {
+  background-image: url(css/f/bbc-azeri.png); }
+
+.bbc--bengali {
+  background-image: url(css/f/bbc-bengali.png); }
+
+.bbc--burmese {
+  background-image: url(css/f/bbc-burmese.png); }
+
+.bbc--chinese {
+  background-image: url(css/f/bbc-chinese.png); }
+
+.bbc--english {
+  background-image: url(css/f/bbc.png); }
+
+.bbc--gahuza {
+  background-image: url(css/f/bbc-gahuza.png); }
+
+.bbc--hausa {
+  background-image: url(css/f/bbc-hausa.png); }
+
+.bbc--hindi {
+  background-image: url(css/f/bbc-hindi.png); }
+
+.bbc--indonesia {
+  background-image: url(css/f/bbc-indonesia.png); }
+
+.bbc--kyrgyz {
+  background-image: url(css/f/bbc-kyrgyz.png); }
+
+.bbc--mundo {
+  background-image: url(css/f/bbc-mundo.png); }
+
+.bbc--nepali {
+  background-image: url(css/f/bbc-nepali.png); }
+
+.bbc--pashto {
+  background-image: url(css/f/bbc-pashto.png); }
+
+.bbc--persian {
+  background-image: url(css/f/bbc-persian.png); }
+
+.bbc--portuguese {
+  background-image: url(css/f/bbc-portuguese.png); }
+
+.bbc--rusian {
+  background-image: url(css/f/bbc-rusian.png); }
+
+.bbc--sinhala {
+  background-image: url(css/f/bbc-sinhala.png); }
+
+.bbc--somali {
+  background-image: url(css/f/bbc-somali.png); }
+
+.bbc--swahili {
+  background-image: url(css/f/bbc-swahili.png); }
+
+.bbc--tamil {
+  background-image: url(css/f/bbc-tamil.png); }
+
+.bbc--tajik {
+  background-image: url(css/f/bbc-tajik.png); }
+
+.bbc--turkce {
+  background-image: url(css/f/bbc-turkce.png); }
+
+.bbc--urdu {
+  background-image: url(css/f/bbc-urdu.png); }
+
+.bbc--ukchina {
+  background-image: url(css/f/bbc-ukchina.png); }
+
+.bbc--ukrainian {
+  background-image: url(css/f/bbc-ukrainian.png); }
+
+.bbc--uzbek {
+  background-image: url(css/f/bbc-uzbek.png); }
+
+.bbc--vietnamese {
+  background-image: url(css/f/bbc-vietnamese.png); }
+
+html[lang="ar"] body,
+html[lang="fa"] body,
+html[lang="ps"] body,
+html[lang="ur"] body {
+  direction: rtl; }
+</style>
+<script>
+document.documentElement.className = "js";
+window.istats = {
+  enabled: true
+}
+window.bbcFlagpoles_istats = "ON";
+window.istatsTrackingUrl = '//sa.bbc.co.uk/bbc/bbc/s?name=news.scotland.story.24631342.page.interactive&cps_asset_id=6925&page_type=story';
+(function () {
+    if (window.location.href.split('onbbcdomain=')[1] == 'true') {
+        document.documentElement.className = 'onbbcdomain';
+    }
+    var hostId = window.location.href.match(/hostid=(.*)&/);
+    if (hostId && hostId.length) {
+        window.istatsTrackingUrl += "&iframe_host=" + encodeURI(hostId[1]);
+        console.log(window.istatsTrackingUrl);
+    }
+})();
+document.write('<' + 'p style="position: absolute; top: -999em;"><' + 'img src="' + window.istatsTrackingUrl + '" height="1" width="1" alt="" /><' + '/p>');
+</script>
+<noscript>
+<p style="position: absolute; top: -999em;"><img src="//sa.bbc.co.uk/bbc/bbc/s?name=news.scotland.story.24631342.page.interactive&amp;cps_asset_id=6925&amp;page_type=story" height="1" width="1" alt="" /></p>
+</noscript>
+<!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/hindi/css/legacy-ie.css?v=0.1.3" />
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link type="text/css" rel="stylesheet" href="http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/hindi/css/main.css?v=0.1.3" />
+<!--<![endif]-->
+</head>
+<body>
+    <div class="masthead bbc--hindi"></div>
+
+    <div class="main">
+
+
+		<ul class="ns__rights-timeline">
+
+
+		<li class="ns__rights--head-section">
+			<div class="ns__rights--date"><h3>दिनांक</h3></div>
+			<div class="ns__rights--decrim"><h3>कानून के दायरे में लाया गया</h3></div>
+			<div class="ns__rights--crim"><h3>अपराधी माना गया<h3></h3></div>
+		</li>
+
+
+
+
+
+
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1789</h3></div>
+		<div class="ns__rights--crim">126 देशों</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1791</h3></div>
+		<div class="ns__rights--decrim">
+फ्रांस</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1793</h3></div>
+		<div class="ns__rights--decrim">
+मुनैको</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1795</h3></div>
+		<div class="ns__rights--decrim">
+बेल्जियम</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+लक्ज़मबर्ग</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1811</h3></div>
+		<div class="ns__rights--decrim">
+नीदरलैंड्स</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1819</h3></div>
+		<div class="ns__rights--crim">
+सिंगापुर</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1822</h3></div>
+		<div class="ns__rights--decrim">
+डोनेकिन रिपब्लिक</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1831</h3></div>
+		<div class="ns__rights--decrim">
+ब्राज़ील</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1832</h3></div>
+		<div class="ns__rights--crim">
+रूसी साम्राज्य</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1837</h3></div>
+		<div class="ns__rights--decrim">
+पेरू</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1841</h3></div>
+		<div class="ns__rights--crim">
+हांगकांग</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1858</h3></div>
+		<div class="ns__rights--decrim">
+तुर्की</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1860</h3></div>
+		<div class="ns__rights--crim">
+भारत</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+बांग्लादेश</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+भूटान</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+पाकिस्तान</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+म्यांमार</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+श्रीलंका</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1860s</h3></div>
+		<div class="ns__rights--crim">
+घाना</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+सेशेल्स</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1861</h3></div>
+		<div class="ns__rights--crim">
+सिएरा लियोन</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1864</h3></div>
+		<div class="ns__rights--crim">
+जमैका</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1865</h3></div>
+		<div class="ns__rights--crim">
+सैन मरीनो</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1867</h3></div>
+		<div class="ns__rights--crim">
+ज़ंज़ीबार</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1869</h3></div>
+		<div class="ns__rights--decrim">
+सूरीनाम</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1872</h3></div>
+		<div class="ns__rights--decrim">
+मैक्सिको</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1871</h3></div>
+		<div class="ns__rights--crim">
+जर्मन साम्राज्य</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1874</h3></div>
+		<div class="ns__rights--crim">
+फिजी</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1880s</h3></div>
+		<div class="ns__rights--crim">
+किरिबाती</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+मालदीव</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+मार्शल आइलैंड</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+सोलोमन आइलैंड</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+टोंगा</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+तुवालु</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+सोलोमन आइलैंड</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+वेस्टर्न समोआ</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+लेसोथो</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+स्वाज़ीलैंड</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1880</h3></div>
+		<div class="ns__rights--decrim">
+पैरागुए</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1884</h3></div>
+		<div class="ns__rights--crim">
+टोगो</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1885</h3></div>
+		<div class="ns__rights--crim">
+बोट्स्वाना</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1886</h3></div>
+		<div class="ns__rights--crim">
+पुर्तगाल</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1887</h3></div>
+		<div class="ns__rights--decrim">
+अर्जेंटीना</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1888</h3></div>
+		<div class="ns__rights--crim">
+बेलीज़</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+पापुआ न्यू गिनी</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+सोमालिया</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+गांबिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1890</h3></div>
+		<div class="ns__rights--decrim">
+इटली</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1891</h3></div>
+		<div class="ns__rights--crim">
+मलेशिया</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+ज़िम्बाब्वे</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1894</h3></div>
+		<div class="ns__rights--crim">
+युंगाडा</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1896</h3></div>
+		<div class="ns__rights--decrim">
+ताइवान</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1897</h3></div>
+		<div class="ns__rights--crim">
+कीनिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1899</h3></div>
+		<div class="ns__rights--decrim">
+होंडूरास</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim ns__rights--up">
+बुरुंडी</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+सूडान</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+नाऊरू</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1901</h3></div>
+		<div class="ns__rights--crim">
+नाइजीरिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1902</h3></div>
+		<div class="ns__rights--crim">
+युंगाडा</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1906</h3></div>
+		<div class="ns__rights--crim">
+ब्रूनेई</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+वानुआतु</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1911</h3></div>
+		<div class="ns__rights--crim">
+ज़ांबिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1917</h3></div>
+		<div class="ns__rights--decrim">
+सोवियत संघ</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1920</h3></div>
+		<div class="ns__rights--crim">
+नामीबिया</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+तंज़ानिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1932</h3></div>
+		<div class="ns__rights--decrim">
+पोलैंड</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1933</h3></div>
+		<div class="ns__rights--decrim">
+डेनमार्क</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1934</h3></div>
+		<div class="ns__rights--decrim">
+उरुग्वे</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim ns__rights--up">
+सोवियत संघ</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1936</h3></div>
+		<div class="ns__rights--crim">
+इसराइल</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1940</h3></div>
+		<div class="ns__rights--decrim">
+आइसलैंड</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1942</h3></div>
+		<div class="ns__rights--decrim">
+स्विट्ज़रलैंड</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1944</h3></div>
+		<div class="ns__rights--decrim">
+स्वीडन</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1951</h3></div>
+		<div class="ns__rights--decrim">
+ग्रीस</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+जॉर्डन</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+पश्चिमी तट</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1957</h3></div>
+		<div class="ns__rights--decrim">
+थाईलैंड</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1961</h3></div>
+		<div class="ns__rights--decrim">
+मंगोलिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1962</h3></div>
+		<div class="ns__rights--decrim">
+चेकोस्लोवाकिया</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+हंगरी</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1966</h3></div>
+		<div class="ns__rights--crim">
+अल्जीरिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1968</h3></div>
+		<div class="ns__rights--decrim">
+पूर्वी जर्मनी</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+बुल्गारिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1969</h3></div>
+		<div class="ns__rights--decrim">
+कनाडा</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+पश्चिमी जर्मनी</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1971</h3></div>
+		<div class="ns__rights--decrim">
+फिनलैंड</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+ऑस्ट्रिया</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+कोस्टारिका</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1972</h3></div>
+		<div class="ns__rights--crim">
+कैमरून</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim ns__rights--up">
+नॉर्वे</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1973</h3></div>
+		<div class="ns__rights--decrim">
+माल्टा</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1975</h3></div>
+		<div class="ns__rights--decrim">
+तिमोर लेस्ते</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1976</h3></div>
+		<div class="ns__rights--decrim">
+बहरीन</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1977</h3></div>
+		<div class="ns__rights--decrim">
+क्रोएशिया</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+मोंटेनेग्रो</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+स्लोवेनिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1979</h3></div>
+		<div class="ns__rights--decrim">
+क्यूबा</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+स्पेन</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1981</h3></div>
+		<div class="ns__rights--decrim">
+कोलंबिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1982</h3></div>
+		<div class="ns__rights--decrim">
+ब्रिटेन</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1983</h3></div>
+		<div class="ns__rights--decrim">
+पुर्तगाल</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1986</h3></div>
+		<div class="ns__rights--decrim">
+न्यूज़ीलैंड</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+हैती</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1988</h3></div>
+		<div class="ns__rights--decrim">
+इसराइल</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1989</h3></div>
+		<div class="ns__rights--decrim">
+लिश्टेनश्टाइन</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1990</h3></div>
+		<div class="ns__rights--decrim">
+अंडोरा</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1991</h3></div>
+		<div class="ns__rights--decrim">
+बहमास</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+यूक्रेन</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1992</h3></div>
+		<div class="ns__rights--crim">
+निकारागुआ</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim ns__rights--up">
+लात्विया</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+एस्टोनिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1993</h3></div>
+		<div class="ns__rights--decrim">
+ऑस्ट्रेलिया</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+रूस*</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+आयरलैंड</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+लिथुआनिया</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+गिनी बिसाऊ</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1994</h3></div>
+		<div class="ns__rights--decrim">
+बेलारूस</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+सर्बिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1995</h3></div>
+		<div class="ns__rights--decrim">
+जिबूती</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+मोल्डोवा</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+अलबानिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1996</h3></div>
+		<div class="ns__rights--decrim">
+मेसेडोनिया</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+रोमानिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1997</h3></div>
+		<div class="ns__rights--decrim">
+चीन</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+एक्वाडोर</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1998</h3></div>
+		<div class="ns__rights--decrim">
+साइप्रस</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1999</h3></div>
+		<div class="ns__rights--decrim">
+चिली</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1998</h3></div>
+		<div class="ns__rights--decrim">
+कजाख्स्तान</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+किर्गिस्तान</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+दक्षिण अफ्रीका</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+ताजिकिस्तान</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2000</h3></div>
+		<div class="ns__rights--decrim">
+अजरबैजान</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+जॉर्जिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2001</h3></div>
+		<div class="ns__rights--decrim">
+बोस्निया और हर्ज़ेगोवनिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2003</h3></div>
+		<div class="ns__rights--decrim">
+अमरीका</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+अर्मेनिया</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2004</h3></div>
+		<div class="ns__rights--decrim">
+केप वेर्दे</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2005</h3></div>
+		<div class="ns__rights--decrim">
+मार्शल आइलैंड</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2007</h3></div>
+		<div class="ns__rights--decrim">
+वानुआतु</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2008</h3></div>
+		<div class="ns__rights--decrim">
+नेपाल</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+निकारागुआ</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+पनामा</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2009</h3></div>
+		<div class="ns__rights--decrim">
+भारत</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim ns__rights--up">
+बुरुंडी</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2010</h3></div>
+		<div class="ns__rights--decrim">
+फिजी</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2013</h3></div>
+		<div class="ns__rights--crim">
+भारत</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+		</ul>
+
+
+    </div>
+
+    <div class="footer"></div>
+    <script>
+        var browser = null;
+        if ('querySelector' in document && 'localStorage' in window && 'addEventListener' in window ) {
+            browser = 'html5';
+        }
+        else if (/MSIE (7|8)/.test(navigator.userAgent)) {
+            browser = 'legacyie';
+            document.write('<scr' + 'ipt src="http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/hindi/js/lib/vendors/legacy-ie-polyfills.js"></scr' + 'ipt>');
+        }
+        if (browser) {
+            var done = false,
+                script = document.createElement('script');
+            script.src = "http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/hindi/js/lib/vendors/require/require-2.1.0.js";
+            script.type = "text/javascript";
+            script.onload = script.onreadystatechange = function() {
+                if ( !done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") ) {
+                    done = true;
+                    require.config({
+                        urlArgs: "v=0.1.3"
+                    });
+                    require(['http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/hindi/js/all-'+browser+'.js'], function () {
+                        require(['app'], function (app) {
+                            app.init('');
+                        });
+                    });
+                }
+            }
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>

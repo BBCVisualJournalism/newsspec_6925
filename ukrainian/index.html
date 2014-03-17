@@ -1,0 +1,1249 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<head>
+<meta http-equiv="content-language" content="uk" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<style>/*
+    This CSS gets added inline
+    into the index.html file
+*/
+body {
+  background: #fff; }
+
+.main {
+  max-width: 976px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 20px;
+  zoom: 1; }
+
+.masthead {
+  background: url(css/f/bbc.png) no-repeat #990000;
+  color: #fff;
+  display: block;
+  font-size: 11px;
+  height: 17px;
+  line-height: 17px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  text-transform: uppercase; }
+
+.onbbcdomain .masthead {
+  display: none; }
+
+.tracking-image {
+  height: 1px;
+  position: absolute;
+  width: 1px; }
+
+.no-js-message {
+  background: red;
+  color: white;
+  display: block;
+  margin-top: -10px;
+  padding: 1em;
+  text-align: center; }
+
+.footer {
+  background: url(css/f/bbc.png) no-repeat 13px 1px #990000;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  font-size: 12px;
+  height: 1em;
+  padding: 0.25em;
+  position: absolute;
+  right: 0; }
+
+.footer::after {
+  content: "©"; }
+
+.onbbcdomain .footer {
+  display: none; }
+
+.tracking-image {
+  height: 1px;
+  position: absolute;
+  width: 1px; }
+
+.no-js-message {
+  background: red;
+  color: white;
+  display: block;
+  margin-top: -10px;
+  padding: 1em;
+  text-align: center; }
+
+.footer {
+  background: url(css/f/bbc.png) no-repeat 13px 1px #990000;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  font-size: 12px;
+  height: 1em;
+  padding: 0.25em;
+  position: fixed;
+  right: 0; }
+
+.footer::after {
+  content: "\00a9"; }
+
+.onbbcdomain .footer {
+  display: none; }
+
+.bbc--afrique {
+  background-image: url(css/f/bbc-afrique.png); }
+
+.bbc--arabic {
+  background-image: url(css/f/bbc-arabic.png); }
+
+.bbc--azeri {
+  background-image: url(css/f/bbc-azeri.png); }
+
+.bbc--bengali {
+  background-image: url(css/f/bbc-bengali.png); }
+
+.bbc--burmese {
+  background-image: url(css/f/bbc-burmese.png); }
+
+.bbc--chinese {
+  background-image: url(css/f/bbc-chinese.png); }
+
+.bbc--english {
+  background-image: url(css/f/bbc.png); }
+
+.bbc--gahuza {
+  background-image: url(css/f/bbc-gahuza.png); }
+
+.bbc--hausa {
+  background-image: url(css/f/bbc-hausa.png); }
+
+.bbc--hindi {
+  background-image: url(css/f/bbc-hindi.png); }
+
+.bbc--indonesia {
+  background-image: url(css/f/bbc-indonesia.png); }
+
+.bbc--kyrgyz {
+  background-image: url(css/f/bbc-kyrgyz.png); }
+
+.bbc--mundo {
+  background-image: url(css/f/bbc-mundo.png); }
+
+.bbc--nepali {
+  background-image: url(css/f/bbc-nepali.png); }
+
+.bbc--pashto {
+  background-image: url(css/f/bbc-pashto.png); }
+
+.bbc--persian {
+  background-image: url(css/f/bbc-persian.png); }
+
+.bbc--portuguese {
+  background-image: url(css/f/bbc-portuguese.png); }
+
+.bbc--rusian {
+  background-image: url(css/f/bbc-rusian.png); }
+
+.bbc--sinhala {
+  background-image: url(css/f/bbc-sinhala.png); }
+
+.bbc--somali {
+  background-image: url(css/f/bbc-somali.png); }
+
+.bbc--swahili {
+  background-image: url(css/f/bbc-swahili.png); }
+
+.bbc--tamil {
+  background-image: url(css/f/bbc-tamil.png); }
+
+.bbc--tajik {
+  background-image: url(css/f/bbc-tajik.png); }
+
+.bbc--turkce {
+  background-image: url(css/f/bbc-turkce.png); }
+
+.bbc--urdu {
+  background-image: url(css/f/bbc-urdu.png); }
+
+.bbc--ukchina {
+  background-image: url(css/f/bbc-ukchina.png); }
+
+.bbc--ukrainian {
+  background-image: url(css/f/bbc-ukrainian.png); }
+
+.bbc--uzbek {
+  background-image: url(css/f/bbc-uzbek.png); }
+
+.bbc--vietnamese {
+  background-image: url(css/f/bbc-vietnamese.png); }
+
+html[lang="ar"] body,
+html[lang="fa"] body,
+html[lang="ps"] body,
+html[lang="ur"] body {
+  direction: rtl; }
+</style>
+<script>
+document.documentElement.className = "js";
+window.istats = {
+  enabled: true
+}
+window.bbcFlagpoles_istats = "ON";
+window.istatsTrackingUrl = '//sa.bbc.co.uk/bbc/bbc/s?name=news.scotland.story.24631342.page.interactive&cps_asset_id=6925&page_type=story';
+(function () {
+    if (window.location.href.split('onbbcdomain=')[1] == 'true') {
+        document.documentElement.className = 'onbbcdomain';
+    }
+    var hostId = window.location.href.match(/hostid=(.*)&/);
+    if (hostId && hostId.length) {
+        window.istatsTrackingUrl += "&iframe_host=" + encodeURI(hostId[1]);
+        console.log(window.istatsTrackingUrl);
+    }
+})();
+document.write('<' + 'p style="position: absolute; top: -999em;"><' + 'img src="' + window.istatsTrackingUrl + '" height="1" width="1" alt="" /><' + '/p>');
+</script>
+<noscript>
+<p style="position: absolute; top: -999em;"><img src="//sa.bbc.co.uk/bbc/bbc/s?name=news.scotland.story.24631342.page.interactive&amp;cps_asset_id=6925&amp;page_type=story" height="1" width="1" alt="" /></p>
+</noscript>
+<!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/ukrainian/css/legacy-ie.css?v=0.1.3" />
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link type="text/css" rel="stylesheet" href="http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/ukrainian/css/main.css?v=0.1.3" />
+<!--<![endif]-->
+</head>
+<body>
+    <div class="masthead bbc--ukrainian"></div>
+
+    <div class="main">
+
+
+		<ul class="ns__rights-timeline">
+
+
+		<li class="ns__rights--head-section">
+			<div class="ns__rights--date"><h3>Дата</h3></div>
+			<div class="ns__rights--decrim"><h3>Декриміналізація</h3></div>
+			<div class="ns__rights--crim"><h3>Кримінальний злочин<h3></h3></div>
+		</li>
+
+
+
+
+
+
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1789</h3></div>
+		<div class="ns__rights--crim">126 країнах</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1791</h3></div>
+		<div class="ns__rights--decrim">
+Франція</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1793</h3></div>
+		<div class="ns__rights--decrim">
+Монако</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1795</h3></div>
+		<div class="ns__rights--decrim">
+Бельгія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Люксембург</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1811</h3></div>
+		<div class="ns__rights--decrim">
+Нідерланди</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1819</h3></div>
+		<div class="ns__rights--crim">
+Сiнгапур</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1822</h3></div>
+		<div class="ns__rights--decrim">
+Домініканська Республіка</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1831</h3></div>
+		<div class="ns__rights--decrim">
+Бразилія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1832</h3></div>
+		<div class="ns__rights--crim">
+Російська імперія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1837</h3></div>
+		<div class="ns__rights--decrim">
+Перу</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1841</h3></div>
+		<div class="ns__rights--crim">
+Гонконг</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1858</h3></div>
+		<div class="ns__rights--decrim">
+Туреччина</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1860</h3></div>
+		<div class="ns__rights--crim">
+Індія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Бангладеш</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Бутан</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Пакистан</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+М’янма (Бірма)</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Шрі-Ланка</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1860s</h3></div>
+		<div class="ns__rights--crim">
+Гана</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Сейшельські Острови</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1861</h3></div>
+		<div class="ns__rights--crim">
+Сьєрра-Леоне</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1864</h3></div>
+		<div class="ns__rights--crim">
+Ямайка</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1865</h3></div>
+		<div class="ns__rights--crim">
+Сан-Марино</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1867</h3></div>
+		<div class="ns__rights--crim">
+Занзібар</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1869</h3></div>
+		<div class="ns__rights--decrim">
+Суринам</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1872</h3></div>
+		<div class="ns__rights--decrim">
+Мексика</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1871</h3></div>
+		<div class="ns__rights--crim">
+Німецька імперія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1874</h3></div>
+		<div class="ns__rights--crim">
+Фіджі</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1880s</h3></div>
+		<div class="ns__rights--crim">
+Кірибаті</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Мальдіви</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Маршаллові Острови</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Соломонові Острови</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Тонга</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Тувалу</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Соломонові Острови</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Самоа</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Лесото</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Свазіленд</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1880</h3></div>
+		<div class="ns__rights--decrim">
+Парагвай</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1884</h3></div>
+		<div class="ns__rights--crim">
+Того</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1885</h3></div>
+		<div class="ns__rights--crim">
+Ботсвана</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1886</h3></div>
+		<div class="ns__rights--crim">
+Португалія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1887</h3></div>
+		<div class="ns__rights--decrim">
+Аргентина</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1888</h3></div>
+		<div class="ns__rights--crim">
+Беліз</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Папуа — Нова Гвінея</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Сомалі</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Гамбія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1890</h3></div>
+		<div class="ns__rights--decrim">
+Італія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1891</h3></div>
+		<div class="ns__rights--crim">
+Малаві</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Зiмбабве</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1894</h3></div>
+		<div class="ns__rights--crim">
+Уганда</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1896</h3></div>
+		<div class="ns__rights--decrim">
+Китайський Тайбей</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1897</h3></div>
+		<div class="ns__rights--crim">
+Кенія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1899</h3></div>
+		<div class="ns__rights--decrim">
+Гондурас</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim ns__rights--up">
+Бурунді</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Судан</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Науру</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1901</h3></div>
+		<div class="ns__rights--crim">
+Нігерія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1902</h3></div>
+		<div class="ns__rights--crim">
+Уганда</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1906</h3></div>
+		<div class="ns__rights--crim">
+Бруней</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Вануату</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1911</h3></div>
+		<div class="ns__rights--crim">
+Замбія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1917</h3></div>
+		<div class="ns__rights--decrim">
+СРСР</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1920</h3></div>
+		<div class="ns__rights--crim">
+Намібія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim">
+Танзанія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1932</h3></div>
+		<div class="ns__rights--decrim">
+Польща</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1933</h3></div>
+		<div class="ns__rights--decrim">
+Данія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1934</h3></div>
+		<div class="ns__rights--decrim">
+Уругвай</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim ns__rights--up">
+СРСР</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1936</h3></div>
+		<div class="ns__rights--crim">
+Ізраїль</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1940</h3></div>
+		<div class="ns__rights--decrim">
+Ісландія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1942</h3></div>
+		<div class="ns__rights--decrim">
+Швейцарія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1944</h3></div>
+		<div class="ns__rights--decrim">
+Швеція</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1951</h3></div>
+		<div class="ns__rights--decrim">
+Греція</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Йорданія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Західний берег</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1957</h3></div>
+		<div class="ns__rights--decrim">
+Таїланд</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1961</h3></div>
+		<div class="ns__rights--decrim">
+Монголія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1962</h3></div>
+		<div class="ns__rights--decrim">
+Чехословаччина</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Угорщина</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1966</h3></div>
+		<div class="ns__rights--crim">
+Алжир</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1968</h3></div>
+		<div class="ns__rights--decrim">
+НДР</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Болгарія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1969</h3></div>
+		<div class="ns__rights--decrim">
+Канада</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Німеччина</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1971</h3></div>
+		<div class="ns__rights--decrim">
+Фінляндія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Австрія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Коста-Ріка</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1972</h3></div>
+		<div class="ns__rights--crim">
+Камерун</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim ns__rights--up">
+Норвегія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1973</h3></div>
+		<div class="ns__rights--decrim">
+Мальта</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1975</h3></div>
+		<div class="ns__rights--decrim">
+Східний Тимор</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1976</h3></div>
+		<div class="ns__rights--decrim">
+Бахрейн</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1977</h3></div>
+		<div class="ns__rights--decrim">
+Хорватія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Чорногорія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Словенія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1979</h3></div>
+		<div class="ns__rights--decrim">
+Куба</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Іспанія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1981</h3></div>
+		<div class="ns__rights--decrim">
+Колумбія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1982</h3></div>
+		<div class="ns__rights--decrim">
+Британія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1983</h3></div>
+		<div class="ns__rights--decrim">
+Португалія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1986</h3></div>
+		<div class="ns__rights--decrim">
+Нова Зеландія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Гаїті</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1988</h3></div>
+		<div class="ns__rights--decrim">
+Ізраїль</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1989</h3></div>
+		<div class="ns__rights--decrim">
+Ліхтенштейн</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1990</h3></div>
+		<div class="ns__rights--decrim">
+Андорра</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1991</h3></div>
+		<div class="ns__rights--decrim">
+Багамські Острови</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Україна</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1992</h3></div>
+		<div class="ns__rights--crim">
+Нікарагуа</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim ns__rights--up">
+Латвія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Естонія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1993</h3></div>
+		<div class="ns__rights--decrim">
+Австралія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Росія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Ірландія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Литва</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Гвінея-Бісау</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1994</h3></div>
+		<div class="ns__rights--decrim">
+Білорусь</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Сербія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1995</h3></div>
+		<div class="ns__rights--decrim">
+Джибуті</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Молдова</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Албанія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1996</h3></div>
+		<div class="ns__rights--decrim">
+Республіка Македонія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Румунія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1997</h3></div>
+		<div class="ns__rights--decrim">
+Китай</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Еквадор</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1998</h3></div>
+		<div class="ns__rights--decrim">
+Кіпр</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1999</h3></div>
+		<div class="ns__rights--decrim">
+Чилі</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+1998</h3></div>
+		<div class="ns__rights--decrim">
+Казахстан</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Киргизстан</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+ПАР</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Таджикистан</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2000</h3></div>
+		<div class="ns__rights--decrim">
+Азербайджан</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Грузія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2001</h3></div>
+		<div class="ns__rights--decrim">
+Боснія і Герцеговина</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2003</h3></div>
+		<div class="ns__rights--decrim">
+США</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Вірменія</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2004</h3></div>
+		<div class="ns__rights--decrim">
+Кабо-Верде</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2005</h3></div>
+		<div class="ns__rights--decrim">
+Маршаллові Острови</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2007</h3></div>
+		<div class="ns__rights--decrim">
+Вануату</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2008</h3></div>
+		<div class="ns__rights--decrim">
+Непал</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Нікарагуа</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--decrim">
+Панама</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2009</h3></div>
+		<div class="ns__rights--decrim">
+Індія</div>
+	</div>
+	<div class="ns__rights--country">
+		<div class="ns__rights--crim ns__rights--up">
+Бурунді</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2010</h3></div>
+		<div class="ns__rights--decrim">
+Фіджі</div>
+	</div>
+</li>
+<li>
+	<div class="ns__rights--country">
+		<div class="ns__rights--date"><h3>
+2013</h3></div>
+		<div class="ns__rights--crim">
+Індія</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+		</ul>
+
+
+    </div>
+
+    <div class="footer"></div>
+    <script>
+        var browser = null;
+        if ('querySelector' in document && 'localStorage' in window && 'addEventListener' in window ) {
+            browser = 'html5';
+        }
+        else if (/MSIE (7|8)/.test(navigator.userAgent)) {
+            browser = 'legacyie';
+            document.write('<scr' + 'ipt src="http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/ukrainian/js/lib/vendors/legacy-ie-polyfills.js"></scr' + 'ipt>');
+        }
+        if (browser) {
+            var done = false,
+                script = document.createElement('script');
+            script.src = "http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/ukrainian/js/lib/vendors/require/require-2.1.0.js";
+            script.type = "text/javascript";
+            script.onload = script.onreadystatechange = function() {
+                if ( !done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") ) {
+                    done = true;
+                    require.config({
+                        urlArgs: "v=0.1.3"
+                    });
+                    require(['http://static.local.bbc.co.uk:1033/news/special/2014/newsspec_6925/ukrainian/js/all-'+browser+'.js'], function () {
+                        require(['app'], function (app) {
+                            app.init('');
+                        });
+                    });
+                }
+            }
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
